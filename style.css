@@ -23,3 +23,14 @@ nav > ul {
     list-style: none;
     padding-left: 0;
 }
+
+section{
+    border-width: 0.2pt;
+    border-style: solid;
+    border-color: #cedddd;
+    margin-top: 4px;
+    margin-bottom: 1.2rem;
+    margin-left: 2px; 
+    margin-right: 2px;
+    padding: 1.5% 0.8%;
+}

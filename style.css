@@ -31,15 +31,26 @@ nav > ul {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    border: #08f solid 1px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    background: rgba(30, 60, 90, 0.5); /* fondo más claro y translúcido */
+    padding: 0.5em 1em;
+}
+
+nav > ul > li > a {
+    color: #e0f7fa; /* texto claro */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3em 0.8em;
+    border-radius: 0.3em;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav > ul > li > a:hover {
+    background: #6ec1e4;
+    color: #1a2634;
 }
 
 section{
-    border-width: 0.2pt;
-    border-style: solid;
-    border-color: #cedddd;
+    border: none;
     margin-top: 4px;
     margin-bottom: 1.2rem;
     margin-left: 2px; 
@@ -62,6 +73,22 @@ section > form {
 #references > h2 {
     grid-column: 1 / 4;
 }
-#references > article {
-    /* Ocupa una columna cada uno automáticamente */
+
+body {
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+    color: #f3f6fa;
+}
+section#education table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 0.7rem 0.5rem;
+    background: rgba(255,255,255,0.04);
+}
+
+section#education th,
+section#education td {
+    border: 1px solid #6ec1e4;
+    padding: 0.6em 1.2em;
+    text-align: center;
 }

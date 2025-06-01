@@ -1,22 +1,244 @@
+body {
+    background: linear-gradient(to right, #f4f4f4, #e6f0ff);
+
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtitle{
+    color:rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+} 
+
+p {
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
 span{
     font-weight: bold;
 }
 
-*{
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+#perfil {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
-h1 {
+
+.perfil-foto {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.perfil-texto {
+    flex: 1;
+}
+
+.proyectos-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.proyecto-item {
+    flex: 1;
     text-align: center;
-    font-weight: bold;
+    max-width: 500px;
+    margin: 0 auto;
 }
-#photo{
+
+.proyecto {
+    width: 100%;
+    max-width: 400px;
     height: auto;
-    width: 50vw;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 1rem 0;
 }
-.subtitle{
-    color:rgb(151 156 165 / 0.89);
-    text-transform: uppercase;
+
+.proyecto-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
+
+.proyecto-item p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.proyecto-item span {
+    font-weight: bold;
+    color: #222;
+}
+
+@media (min-width: 768px) {
+    .proyectos-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    }
+
+    .proyecto-item {
+    margin: 0 1rem;
+    }
+}
+
+#experience {
+    background-color: #f9f9f9;
+}
+
+#educacion {
+    padding: 2rem 1rem;
+}
+
+.edu-item {
+    margin-bottom: 3rem;
+}
+
+.edu-link {
+    font-size: 1.2rem;
+    color: rgba(27, 151, 145, 0.925);
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.edu-link:hover {
+    color: #1456a1;
+    text-decoration: underline;
+}
+
+.edu-details {
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.mapa {
+    display: block;
+    margin: 2rem auto; /* Centrado horizontal con espacio arriba y abajo */
+    max-width: 100%;    /* Para que sea responsivo */
+    border-radius: 8px; /* Opcional: bordes redondeados para un look más limpio */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.repo-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #019; /* azul profesional */
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.repo-link:hover {
+    color: #1456a1;
+    text-decoration: underline;
+}
+
+#skills {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+#skills .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skills-description {
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.soft-skills li {
+    background-color: #e0f7fa;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.hard-skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill-category {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.skill-category h4 {
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 2px solid #00acc1;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-category li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
 footer p {
     text-align: right;
     font-style: italic;
@@ -35,7 +257,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-    color: #e0f7fa; /* texto claro */
+    color: #e0f7fa; 
     text-decoration: none;
     font-weight: bold;
     padding: 0.3em 0.8em;
@@ -44,25 +266,19 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-    background: #6ec1e4;
+    background: #6ec1ef;
     color: #1a2634;
 }
 
-section{
+section {
     border: none;
-    margin-top: 4px;
-    margin-bottom: 1.2rem;
-    margin-left: 2px; 
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 2px;
     margin-right: 2px;
     padding: 1.5% 0.8%;
 }
-section > form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
 
-/* Grid */
 #references {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -86,4 +302,85 @@ section#education td {
     border: 1px solid #6ec1e4;
     padding: 0.6em 1.2em;
     text-align: center;
+}
+
+#contact {
+    background-color: #f9f9f9;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+#contact a.linkedin-icon svg,
+#contact a.github-icon svg {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    fill: currentColor;
+    color: #000;
+}
+
+#contact a.linkedin-icon:hover svg {
+    color: #0077b5;
+    transform: scale(1.2);
+}
+
+#contact a.github-icon:hover svg {
+    color: #333;
+    transform: scale(1.2);
+}
+
+/* Form Styling */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact label {
+    font-weight: 600;
+    color: #444;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #0077b5;
+    outline: none;
+    }
+
+#contact textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#contact button {
+    background-color: #0077b5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+#contact button:hover {
+    background-color: #005f94;
 }

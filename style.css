@@ -49,7 +49,7 @@ span{
 
 .perfil-foto {
     width: 160px;
-    height: 160px;
+    min-height: 160px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -78,7 +78,7 @@ span{
 .proyecto {
     width: 100%;
     max-width: 400px;
-    height: auto;
+    min-height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     margin: 1rem 0;
@@ -249,6 +249,7 @@ nav > ul {
     padding-left: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* <-- Añadido para permitir el salto de línea */
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
@@ -319,7 +320,7 @@ section#education td {
 #contact a.linkedin-icon svg,
 #contact a.github-icon svg {
     width: 50px;
-    height: 50px;
+    min-height: 50px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     fill: currentColor;
     color: #000;
@@ -383,4 +384,14 @@ section#education td {
 
 #contact button:hover {
     background-color: #005f94;
+}
+
+@media (max-width: 768px) {
+    #references {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #references > h2 {
+        grid-column: 1 / 2;
+    }
 }
